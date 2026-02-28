@@ -91,7 +91,7 @@ Model Performance
 
 Outcome
 
-![Project Summary](project_summary)
+![Project Summary](project_summary.png)
 
 This project demonstrates:
 
