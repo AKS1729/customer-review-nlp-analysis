@@ -1,54 +1,103 @@
-Customer Review NLP Analysis
-Project Overview
+Customer Review NLP & Recommendation Prediction
 
-This project analyzes customer reviews from a women’s clothing e-commerce platform using Natural Language Processing (NLP) and Machine Learning. The goal is to understand customer sentiment, identify key themes in reviews, and predict whether a customer will recommend a product.
+An end-to-end Natural Language Processing (NLP) project analyzing customer reviews from a women’s clothing e-commerce platform to extract insights and predict product recommendations.
 
-Dataset
 
-~23,000 customer reviews
+This project combines:
 
-Includes product category, customer age, location, channel, review text, rating, and recommendation flag
+EDA → Text Cleaning → Sentiment Analysis → Topic Modeling → Machine Learning → Power BI Dashboard
 
-Key Steps
 
-Exploratory Data Analysis (EDA)
+Project Objective
 
-Text preprocessing and cleaning
+The goals of this project are to:
 
-Sentiment analysis and word clouds
+Understand customer sentiment from review text
+Identify key themes driving satisfaction & dissatisfaction
+Predict whether a customer will recommend a product
+Build an interactive dashboard for business decision-making
 
-Topic modeling using LDA
 
-Recommendation prediction using Logistic Regression
-
-Interactive Power BI dashboard
-
-Key Insights
-
-Fit and sizing are the main drivers of customer satisfaction and dissatisfaction
-
-Fabric quality and comfort strongly influence recommendations
-
-Combining review text with numeric features improves prediction performance
-
-Tools Used
+Tech Stack
 
 Python (Pandas, NumPy)
-
 Scikit-learn
-
-NLP techniques (TF-IDF, LDA)
-
+NLP Techniques (TF-IDF, LDA)
+Matplotlib & Seaborn
 Power BI
 
-Project Files
 
-notebook/ – Jupyter notebook with full analysis
+Exploratory Data Analysis
 
-data/ – Cleaned dataset used for analysis
+Review count distribution by category
+Review distribution by location
+Channel analysis (Web vs Mobile)
+Rating vs Recommendation behavior
+Sentiment distribution (Positive vs Negative)
 
-powerbi/ – Power BI dashboard file
+Key Dashboard KPIs:
 
-Conclusion
+![Overview](overview.png)
 
-This project demonstrates how NLP and machine learning can be used to extract insights from customer reviews and support better decision-making in e-commerce.
+22.64K Total Reviews
+4.18 Average Rating
+19K Recommendations
+
+
+Text Preprocessing
+
+Lowercasing
+Removing punctuation & special characters
+Stopword removal
+TF-IDF Vectorization
+Feature scaling (numeric + text features combined)
+
+
+NLP & Topic Modeling
+
+Used Latent Dirichlet Allocation (LDA) to extract key themes from reviews.
+Major Themes Identified:
+Fit & Sizing
+Fabric Quality
+Comfort
+Product Design
+
+
+Key Insight:
+
+Fit and sizing are the strongest drivers of customer satisfaction and dissatisfaction.
+
+
+Predict whether a customer will recommend the product (0 = No, 1 = Yes)
+
+
+Features Used
+TF-IDF review text
+Rating
+Age
+Combined sparse feature matrix
+
+
+Model Used
+
+Logistic Regression
+Selected for:
+Interpretability
+Good performance on high-dimensional text data
+
+Model Performance
+
+![Model Results](model_results.png)
+
+Outcome
+
+![Project Summary](project_summary)
+
+This project demonstrates:
+
+✔ Strong NLP preprocessing
+✔ Topic modeling (LDA)
+✔ Text + structured feature engineering
+✔ High-dimensional model training
+✔ ML evaluation with precision/recall
+✔ Business dashboard integration
