@@ -37,7 +37,7 @@ Sentiment distribution (Positive vs Negative)
 
 Key Dashboard KPIs:
 
-![Overview](overview.png)
+![Overview](overview_dashboard.png)
 
 22.64K Total Reviews
 4.18 Average Rating
@@ -87,7 +87,7 @@ Good performance on high-dimensional text data
 
 Model Performance
 
-![Model Results](model_results.png)
+![Model Results](model_performance.png)
 
 Outcome
 
